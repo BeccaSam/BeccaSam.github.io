@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
     <style media="screen">
 
+
     .header{
       height: 50px;
       max-height: 50px;
@@ -32,6 +33,54 @@
       max-height: 200px;
       min-height: 200px;
     }
+/*------------------------*/
+    .paddingMargin img {
+        margin-top: 8%;
+        margin-left: 30%;
+    }
+
+    .paddingMargin div {
+        margin-left: 20%;
+    }
+
+    /*-----------------*/
+    /*------------------*/
+    .paddingMarginPlus img {
+        padding-top: 10%;
+        padding-bottom: 3%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .paddingMarginPlus div {
+        padding: 3%;
+    }
+/*-------------------------*/
+/*-------------------------*/
+/*-------------------------*/
+
+.horAndVertRelativeContainer {
+    position: relative;
+}
+
+.horAndVertRelativeContainer img {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.horAndVertRelativeContainer div {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.positionRelative img{
+  position: absolute;
+  
+}
 
 
     </style>
@@ -72,13 +121,19 @@
 
   <div class="row">
     <div class="container">
-      <div class="col-md-3 lowerTwo randomColor">
+      <div class="col-md-3 lowerTwo randomColor paddingMargin">
+        <span class="centerType">Padding / Margin</span>
+        <br>
+        <img src="images/elsa.png">
       </div>
 
-      <div class="col-md-3 lowerTwo randomColor">
+      <div class="col-md-3 lowerTwo randomColor paddingMarginPlus">
+        <img src="images/elsa.png">
       </div>
 
-      <div class="col-md-3 lowerTwo randomColor">
+      <div class="col-md-3 lowerTwo randomColor horAndVertRelativeContainer">
+        <span class="centerType">Position</span>
+        <img src="images/elsa.png">
       </div>
 
       <div class="col-md-3 lowerTwo randomColor">
