@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grid Page</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+    <style media="screen">
+
+    .header{
+      height: 50px;
+      max-height: 50px;
+      min-height: 50px;
+      font-family: 'Barrio', cursive;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .firstText{
+      height: 100px;
+      max-height: 100px;
+      min-height: 100px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: blue;
+      margin: 0 auto;
+      display: block;
+line-height:100px;
+
+    }
+
+    .secondText{
+      height: 90px;
+      max-height: 90px;
+      min-height: 90px;
+    }
+
+    .secondText img{
+      height: 75%;
+      padding-top: 5px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .lowerTwo{
+      height: 120px;
+      max-height: 120px;
+      min-height: 120px;
+    }
+
+    #pic1{
+      padding-top: 5%;
+      padding-left: 40%;
+    }
+
+    .pic1{
+      margin-top: 5%;
+      margin-left: 18%;
+
+    }
+
+    .galleryOneRight img{
+
+    }
+
+    .galleryOneRight div{
+
+    }
+
+    .relativeParent{
+      position: relative;
+    }
+
+    .relativeParent img{
+      position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+    }
+
+    .relativeParent2{
+      position: relative;
+    }
+
+    .relativeParent2 img{
+      position: absolute;
+           top: 50%;
+
+           transform: translate(-50%, -50%);
+    }
+
+    #pic2SideBySide1{
+      left: 30%;
+    }
+
+    #pic2SideBySide2{
+      left: 70%;
+    }
+
+    </style>
+  </head>
+  <body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 header randomColor">
+
+    </div>
+
+    <div class="col-md-6 header randomColor">
+
+    </div>
+
+    <div class="col-md-1 header randomColor">
+
+    </div>
+
+    <div class="col-md-1 header randomColor">
+
+    </div>
+
+    <div class="col-md-1 header randomColor">
+
+    </div>
+
+  </div>
+</div>
+
+
+
+  <div class="row">
+
+      <div class="col-md-12 firstText randomColor">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec sem id lectus dignissim viverra vel euismod nunc.
+
+    </div>
+  </div>
+
+    <div class="row">
+
+        <div class="col-md-12 secondText randomColor">
+          <img src="images/stars.jpg" alt="image">
+        </div>
+
+      </div>
+
+
+  <div class="row">
+      <div class="col-md-4 lowerTwo randomColor">
+        <img id="pic1" src="images/moon.jpg" alt="moon">
+      </div>
+
+      <div class="col-md-4 lowerTwo randomColor">
+        <img class="pic1" src="images/moon.jpg" alt="moon">
+<img class="pic1" src="images/moon.jpg" alt="moon">
+      </div>
+
+      <div class="col-md-4 lowerTwo randomColor">
+        <img src="images/moon.jpg" alt="moon">
+
+<div>
+  This is the moon.
+</div>
+<div>
+  It lives in Space.
+</div>
+    </div>
+    </div>
+
+  <div class="row">
+      <div class="col-md-4 lowerTwo randomColor relativeParent">
+<img src="images/earth.gif" alt="earth">
+      </div>
+
+      <div class="col-md-4 lowerTwo randomColor relativeParent2">
+<img id="pic2SideBySide1" src="images/earth.gif" alt="earth">
+<img id="pic2SideBySide2" src="images/earth.gif" alt="earth">
+      </div>
+
+      <div class="col-md-4 lowerTwo randomColor">
+
+      </div>
+
+    </div>
+
+
+  <div class="row">
+      <div class="col-md-4 lowerTwo randomColor">
+
+      </div>
+
+      <div class="col-md-4 lowerTwo randomColor">
+
+      </div>
+
+      <div class="col-md-4 lowerTwo randomColor">
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script>
+            function getRandomNumber(min, max) {
+                return Math.floor(Math.random() * max + min);
+            }
+
+            $(document).ready(function() {
+
+                var bodyColumns = $(".randomColor");
+
+                bodyColumns.each(function() {
+
+                    $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+                })
+
+                $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+
+            })
+    </script>
+
+  </body>
+</html>
