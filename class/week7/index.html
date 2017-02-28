@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+  </head>
+  <body>
+    Hello World!
+    <div id="myDiv">Look some text!</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script>
+    //  ()  means execute a function //
+    /* this is used for comments. so are double slash as seen above*/
+//alert("This is a popup");
+
+console.log ("This is for debugging messages")
+
+var myVAr;
+
+//in quotes is a string
+var myAnotherVar = "Here is my another var";
+
+//alert(myAnotherVar);
+console.log(myAnotherVar);
+
+//concatenation
+
+var myName = "Samborsky";
+var myFirstName = "Rebecca";
+//alert("My first name is " +myFirstName +" and my last name is "+myName);
+
+//{} code block
+function sayMyName(){
+//everything in code block will be executed
+
+console.log("Your name is "+myName);
+
+}
+//calling the function
+sayMyName();
+
+function sayMyName2(name){
+//everything in code block will be executed
+
+console.log("Your name is "+name);
+
+}
+sayMyName2("Rebecca");
+sayMyName2("Sydney");
+
+/*when the document is ready, jQuery gets the element wiht id myDiv and calls the html function
+html function will replace the html within the element*/
+$(document).ready(function(){
+  //alert("the document is ready!");
+  $("#myDiv").html("Hey, I was able to change the DOM ");
+  $("#myDiv").append("<br>add something more");
+});
+    </script>
+
+
+  </body>
+
+</html>
