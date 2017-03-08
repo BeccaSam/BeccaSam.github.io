@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grid Page</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+    <style media="screen">
+    #centerDiv {
+      text-align: center;
+    }
+    </style>
+
+      </head>
+      <body>
+
+<div class="container">
+  <div class="row">
+    <div id="carDiv" class="col-md-12">
+
+    </div>
+  </div>
+
+</div>
+
+<div class="row">
+  <div id="truckDiv" class="col-md-12">
+
+  </div>
+</div>
+
+<div class="row">
+  <div id="boatDiv" class="col-md-12">
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+//our program
+//three primitive types
+
+var myString = "a string";
+var myNumber = 2;
+var myVar = "2";
+var myBoolean = false;
+var myVar2 = "true";
+
+//arrary; declare with square brackets
+//declaring an empty array
+var myArray = [];
+
+var myFullArray = ["Sydney","Rebecca","Kohde"];
+
+console.log(myFullArray[0]);
+console.log("myFullArray 2nd value = "+myFullArray[1]);
+
+var myMixArray = [3,"David",false];
+myMixArray.push("another value");
+console.log("myMixArray values: "+myMixArray);
+
+//type, price, mileage, color, fuelType, src
+//when the page loads, we go to a database and get some info about a car
+
+var car = {
+  type : "SUV",
+  price : 45000,
+  mileage : 24,
+  color :"white",
+  fuelType : "regular gasoline",
+  src : "images/car1.jpg",
+  message : function(){
+    console.log("A car is useful!");
+  }
+};
+
+var truck = {
+  type : "Truck",
+  price : 450000,
+  mileage : 300000,
+  color :"black",
+  fuelType : "diesel",
+  src : "images/truck1.jpg",
+  message : function(){
+    console.log("A truck is good at hauling heavy things!");
+  }
+};
+
+var boat = {
+  type : "Boat",
+  price : 4500000,
+  mileage : 300000,
+  color :"black",
+  fuelType : "regular gasoline",
+  src : "images/boat1.jpg",
+  message : function(){
+    console.log("A boat is good for adventures on the water!");
+  }
+};
+//object name.property
+console.log(car.type);
+console.log(car.price);
+console.log(car.message());
+
+$(document).ready(function(){
+/*
+$("#carDiv").html("<div id='centerDiv'></div>")
+$("#carDiv").html("<div>"+car.type+"</div>");
+$("#carDiv").append("<img src='"+car.src+"'/>");
+$("#carDiv").append("<div>"+car.price+"</div>");
+*/
+var myHtml = "<div id='centerDiv'>" +
+"<div>"+car.type+"</div>" +
+"<img src='"+car.src+"'/>" +
+"<div>"+car.price+"</div>" +
+"</div>";
+
+$("#carDiv").html(myHtml);
+
+
+var myHtml = "<div id='centerDiv'>" +
+"<div>"+truck.type+"</div>" +
+"<img src='"+truck.src+"'/>" +
+"<div>"+truck.price+"</div>" +
+"</div>";
+
+$("#truckDiv").html(myHtml);
+
+
+var myHtml = "<div id='centerDiv'>" +
+"<div>"+boat.type+"</div>" +
+"<img src='"+boat.src+"'/>" +
+"<div>"+boat.price+"</div>" +
+"</div>";
+
+$("#boatDiv").html(myHtml);
+
+
+});
+
+
+
+
+
+        </script>
+
+
+  </body>
+</html>
