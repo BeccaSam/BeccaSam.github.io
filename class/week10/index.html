@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Holy Grail</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+        /**.header{
+      min-height: 100px;
+      max-height: 100px;
+    }**/
+        /**  .middle{
+      min-height: 600px;
+      max-height: 600px;
+    }**/
+
+        #posts,
+        .ads {
+            min-height: 200px;
+        }
+
+        .mid {
+            min-height: 200px;
+            max-height: 200px;
+        }
+
+        .tiny {
+            min-height: 100px;
+            max-height: 100px;
+        }
+
+        .footer {
+            min-height: 60px;
+            max-height: 60px;
+        }
+
+        body {
+            font-size: 200%;
+        }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 header randomColor header">
+                <ul class="nav nav-tabs nav-justified">
+                    <li role="presentation" class="active"><a href="#">Home</a></li>
+                    <li role="presentation"><a href="#">Profile</a></li>
+                    <li role="presentation"><a href="#">Messages</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 randomColor ads">
+
+            </div>
+            <div class="col-md-8" id="posts">
+
+            </div>
+            <div class="col-md-2 randomColor ads">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 footer randomColor">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+        var myObjects = [{}, {}, {}];
+        //give object data
+        var postsData = [{
+                image: "images/profilepic1.png",
+                subheading: "It's a beautiful day!",
+                content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam arcu elit, eu luctus lacus aliquet efficitur. Praesent vehicula ipsum vel blandit sodales. Morbi eu justo orci. "
+            },
+            {
+                image: "images/profilepic2.jpg",
+                subheading: "It's a beautiful day today!",
+                content: "Maecenas mattis elit consequat laoreet pharetra. Donec volutpat tortor et neque tempus, a bibendum libero elementum."
+            },
+            {
+                image: "images/profilepic3.jpg",
+                subheading: "It's a beautiful day!",
+                content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam arcu elit, eu luctus lacus aliquet efficitur. Praesent vehicula ipsum vel blandit sodales. Morbi eu justo orci. "
+            },
+            {
+                image: "images/profilepic4.jpg",
+                subheading: "It's a beautiful day today!",
+                content: "Maecenas mattis elit consequat laoreet pharetra. Donec volutpat tortor et neque tempus, a bibendum libero elementum."
+            },
+            {
+                image: "images/profilepic5.jpg",
+                subheading: "It's a beautiful day!",
+                content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam arcu elit, eu luctus lacus aliquet efficitur. Praesent vehicula ipsum vel blandit sodales. Morbi eu justo orci. "
+            },
+            {
+                image: "images/profilepic6.jpg",
+                subheading: "It's a beautiful day today!",
+                content: "Maecenas mattis elit consequat laoreet pharetra. Donec volutpat tortor et neque tempus, a bibendum libero elementum."
+            }
+        ];
+
+        var myHtml = "";
+
+        //loop through postData and build html string
+        for (var i = 0; i < postsData.length; i = i + 1) {
+            myHtml = myHtml + ' <div class="media">' +
+                '<div class="media-left">' +
+                '<a href="#">' +
+                '<img class="media-object" src="' + postsData[i].image + '" alt="...">' +
+                '</a>' +
+                '  </div>' +
+                '  <div class="media-body">' +
+                '<h4 class="media-heading">' + postsData[i].subheading + '</h4>' +
+                '  ' + postsData[i].content + '' +
+                '</div>' +
+                '</div>';
+        }
+        // write the data to the screen
+        $("#posts").html(myHtml);
+
+
+        /*
+    <div class="media">
+    <div class="media-left">
+      <a href="#">
+        <img class="media-object" src="..." alt="...">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Media heading</h4>
+      ...
+    </div>
+  </div>
+
+    */
+    </script>
+</body>
+
+</html>
