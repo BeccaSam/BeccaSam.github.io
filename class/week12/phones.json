@@ -1,0 +1,70 @@
+[{
+        "brand": "Samsung",
+        "model": "Galaxy S7",
+        "price": "$100.00",
+        "retailer": "Koodo Mobile",
+        "image":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQN7Dmi2PB1aC5m1annRTJJj2YCL8bLjxh4zv-IJqQ5nmeaEAFHUIrr3S0SKt3PHBr9qLkt4u_C&usqp=CAE"
+},
+{
+        "brand": "iPhone",
+        "model": "SE",
+        "price": "$0",
+        "retailer": "Koodo Mobile",
+        "image":"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR3s5S8oS-13R9PJjbb4H54jEfGtvJaIr7ylPnq5OlpWej3D5AZ9Nt2DNZy_N6FRe6ZIJ09YwAW&usqp=CAE"
+},
+{
+        "brand": "Samsung",
+        "model": "Galaxy Grand (Refurbished)",
+        "price": "$198.68",
+        "retailer": "AliExpress.com",
+        "image":"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTyp2rWEnqWprm53aigUn632og2goARalGd1Oo3kirjI6QFrJBsc9DJNRZjCEIWgCaLxJ_bpBFZ&usqp=CAE"
+},
+{
+        "brand": "Google",
+        "model": "Pixel",
+        "price": "$899",
+        "retailer": "Google Store",
+        "image":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQLWu3Xvs-QGowpGx-JieJ_77RcEoQUasDoWekNDtTNlYkhn_Hale2PiJcp10WTizMzRp1j5i2V&usqp=CAE"
+},
+{
+        "brand": "Samsung",
+        "model": "Galaxy S6 (Refurbished)",
+        "price": "$249.99",
+        "retailer": "eBay",
+        "image":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRt-pL5FBsjZVGFvElBqzEiLw1QKETV6547mBNR9AaJaubl72_j3vXg3506OtSJm4tkbqkeaag&usqp=CAE"
+},
+{
+        "brand": "iPhone",
+        "model": "4S",
+        "price": "$129.99",
+        "retailer": "FactoryDirect.ca",
+        "image":"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSQA4hJ3ZWKOy95KjQvip7A4SkJaK9js43uiFJmV__lqiIjGRhNrqDzPmsHc-oYgKbVYtWo4Ig&usqp=CAE"
+},
+{
+        "brand": "iPhone",
+        "model": "5S (Refurbished)",
+        "price": "$179.99",
+        "retailer": "eBay",
+        "image":"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTYwgRt3avhidKA5aNsU4bjiFiQWwOCfxhF9-u3nS3IieYlxgrKrXlXR1p2N7Mw00PBAYRGNlqA&usqp=CAE"
+},
+{
+        "brand": "NEWMIND",
+        "model": "F15",
+        "price": "$29.87",
+        "retailer": "AliExpress.com",
+        "image":"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTBgh0q8_7Yerm6CT19DHjggjOBtrQFyGEQ7b49k3SRZr_SXixh6uTIHoUUm4M5UOuX_8QXTHhK&usqp=CAE"
+},
+{
+        "brand": "Motorola",
+        "model": "Moto Play",
+        "price": "$249.99",
+        "retailer": "eBay",
+        "image":"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSnaXsUZswXh4kCFCYBJk3IUDqXsZz8-Triz4RGzVBU6EfEpkekSe6mO6iIscC9OcpXPDtoSVs&usqp=CAE"
+},
+{
+        "brand": "Samsung",
+        "model": "Galaxy J7",
+        "price": "$204.62",
+        "retailer": "AliExpress.com",
+        "image":"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS-LIGYURBGpGoVdcxfSNOZXcPFf1pF8qflKmDTahgVr2Ak_3tQdKD2HoSjfk7YcFzwqmPBPAwC&usqp=CAE"
+}]
